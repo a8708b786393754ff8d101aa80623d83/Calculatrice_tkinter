@@ -3,10 +3,10 @@ import tkinter.messagebox
 
 from  tkinter.constants import *
 
-
 b = "#1EE"
 
 class Calculatrice(tk.Tk): 
+#Version 1.1
     def __init__(self):
         super().__init__()
         self.menu_bar()
@@ -25,7 +25,6 @@ class Calculatrice(tk.Tk):
         except SyntaxError:
             tkinter.messagebox.showerror("Syntaxe invalide","Veuillez verifier votre syntaxe")
             
-
 
     def delete(self): 
         self.entry.delete(0,END)
